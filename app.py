@@ -18,8 +18,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Email Configuration
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Your SMTP server
 app.config['MAIL_PORT'] = 587  # For starttls
-app.config['MAIL_USERNAME'] = 'rajkumarr7102002@gmail.com'  # Your email address
-app.config['MAIL_PASSWORD'] = 'cysh fffp dued tfti'  # Your email password
+app.config['MAIL_USERNAME'] = ''  # Your email address
+app.config['MAIL_PASSWORD'] = ''  # Your email password
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 
@@ -166,7 +166,7 @@ def generate_pdf_report():
 
 
 def send_email_with_message():
-    msg = Message("Your Report Update", sender="prk7102002@gmail.com", recipients=["rajkumarr7102002@gmail.com"])  # Replace with the recipient's email
+    msg = Message("Your Report Update", sender="", recipients=[""])  # Replace with the recipient's email
     msg.body = "Your PDF report has been generated and is ready for download."
 
     # Send the email without the PDF attachment
